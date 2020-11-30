@@ -618,7 +618,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/11/30/java-01-JDK-JRE/" class="post-title-link" itemprop="url">java_01_JDK_JRE</a>
+            <a href="/2020/11/30/java-01-JDK-JRE/" class="post-title-link" itemprop="url">ch1 JDK 和 JRE</a>
         </h2>
 
         <div class="post-meta">
@@ -627,8 +627,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-11-30 09:11:30" itemprop="dateCreated datePublished" datetime="2020-11-30T09:11:30+08:00">2020-11-30</time>
+              <time title="Created: 2020-11-30 09:11:30 / Modified: 11:35:04" itemprop="dateCreated datePublished" datetime="2020-11-30T09:11:30+08:00">2020-11-30</time>
             </span>
 
           
@@ -642,7 +643,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h3 id="从Hello-World-开始"><a href="#从Hello-World-开始" class="headerlink" title="从Hello World 开始"></a>从Hello World 开始</h3><p>HelloWorld.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;Hello World!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个文档撰写时有几点必须注意：</p>
+<ul>
+<li>扩展名是.java：</li>
+<li>主文件名与类名称必须相同。类名称是指class关键词后的名称：<br> 范例主文件名就是HelloWorld这个名称，这个名称必须与HelloWorld.java的主文件名（HelloWorld）相同。</li>
+<li>注意每个字母大小写。Java程序区分字母大小写，System与system对Java程序来说是不同的名称。</li>
+<li>空格只能是半角空格符或Tab字符</li>
+</ul>
+<h3 id="1-定义类"><a href="#1-定义类" class="headerlink" title="1.定义类"></a>1.定义类</h3><p>class是用来定义类的关键词，之后接上类名称（HelloWorld）。<br>Java程序规定，所有程序代码都要定义在“类”中。<br><strong>public关键词</strong>，表示HelloWorld类是公开类，一个.java文件可定义多个类，但是只能有一个公开类，而且主文件名必须与公开类名称相同。</p>
+<h3 id="2．定义区块（Block）"><a href="#2．定义区块（Block）" class="headerlink" title="2．定义区块（Block）"></a>2．定义区块（Block）</h3><p>在程序中使用大括号“{”与“}”定义区块，大括号两两成对，目的在于区别程序代码范围。例如，<br>程序中HelloWorld类的区块包括了main()方法（Method）<br>而main()方法的区块包括了一句显示信息的程序代码</p>
+<h3 id="3．定义main-方法"><a href="#3．定义main-方法" class="headerlink" title="3．定义main()方法"></a>3．定义main()方法</h3><p>程序执行的起点就是 <strong>程序进入点（Entrypoint）</strong>，Java程序执行的起点是main()方法。<br>main()方法是 <strong>public成员</strong>，表示可以被JVM公开执行，<br> <strong>static</strong> 表示JVM不用生成类实例就可以调用，<br> Java程序执行过程的错误，都是以例外方式处理，所以main()不用传回值，声明为void即可，<br> String[] args可以在执行程序时，取得用户指定的命令行自变量。</p>
+<h3 id="4．撰写语句（Statement）"><a href="#4．撰写语句（Statement）" class="headerlink" title="4．撰写语句（Statement）"></a>4．撰写语句（Statement）</h3><p>语句是程序语言中的一行指令，简单地说，就是程序语言中的“一句话”。</p>
+<blockquote>
+<p>System.out.println(“Hello World!”);</p>
+</blockquote>
+<p>每句代码的结束要用分号（;）<br>其实使用了java.lang包（package）中System类的public static成员out。（out参考至PrintStream实例）</p>
+
       
     </div>
 
@@ -803,7 +821,7 @@
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
